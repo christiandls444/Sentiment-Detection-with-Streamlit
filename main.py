@@ -7,6 +7,12 @@ from nltk.corpus import stopwords
 from nltk.stem import WordNetLemmatizer
 from textblob import TextBlob
 from wordcloud import WordCloud
+import nltk
+
+
+nltk.download("stopwords")
+nltk.download("punkt")
+nltk.download("wordnet")
 
 # Load the trained model
 with open('./model/naive_bayes_model.pkl', 'rb') as file:
